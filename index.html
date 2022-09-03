@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <h1>Credit Card Check Out</h1>
+        <div class="cart-container">
+            <!-- <i class="fa-solid fa-cart-shopping icon-cart"></i> -->
+            <div class="payment-method">
+                <p>Payment Method</p>
+                <button class="btn-pm">Credit Card<i class="fa-solid fa-credit-card icons"></i></button>
+                <button class="btn-PayPal btn-pm">PayPal<i class="fa-brands fa-paypal icons"></i></button>
+            </div>
+            <form action="#" class="form">
+                <div class="payment-details">
+                    <div class="pd1">
+                        <label for="name-on-card">Name On Card</label>
+                        <input type="text" placeholder="Full Name on Card" name="name-on-card" id="name-on-card">
+                        <label for="card-number">Card Number</label>
+                        <input type="number" placeholder="Card Number" name="card-number" id="card-number">
+                    </div>
+                    <div class="pd2">
+                        <label for="expiration-date">Expiration Date</label>
+                        <input type="number" placeholder="MM/YY" name="expiration-date" id="expiration-date">
+                        <label for="cvv">CVV</label>
+                        <input type="number" placeholder="---" name="cvv" id="cvv">
+                    </div>
+                </div>
+                <div class="btn">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

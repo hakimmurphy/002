@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 10rem;
+    font-size: 8rem;
+}
+
+.cart-container {
+    width: 60rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAF8F7;
+    margin-top: 3rem;
+    border: none;
+    border-radius: 5%;
+    position: relative;
+    z-index: 1;
+}
+
+.icon-cart {
+    font-size: 50rem;
+    position: absolute;
+    z-index: -1;
+    color: #C8D1DF;
+    left: -40rem;
+    top: -20rem;
+}
+
+.payment-method {
+    display: flex;
+    padding-bottom: 10rem;
+    align-items: center;
+}
+
+.payment-method p {
+    font-size: 1.5rem;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    padding-top: 2rem;
+    font-weight: 900;
+}
+
+.btn-pm {
+    display: flex;
+    margin-top: 2rem;
+    padding: 3rem;
+    border: none;
+    border-radius: 10%;
+    margin-right: 4rem;
+}
+
+.icons {
+    margin-left: 1rem;
+}
+
+.payment-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pd1 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.pd2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-details label {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-right: 15rem;
+    position: relative;
+    z-index: 1;
+}
+
+.payment-details input {
+    border: none;
+    border-radius: 7%;
+    background-color: #EFEFEF;
+    color: #000;
+    padding: 1rem;
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    margin-top: 1rem;
+    border: none;
+    justify-content: center;
+    width: 100%;
+    padding: 3rem;
+    border-radius: 10%;
+}
+
+.btn-pm:hover,
+.btn button:hover {
+    background-color: #ABDFDD;
+}
+
+@media(max-width:800px) {
+    h1 {
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 600px) {
+    .payment-method {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .payment-method p {
+        margin-left: -1rem;
+    }
+
+    .payment-details {
+        flex-direction: column;
+    }
+}
