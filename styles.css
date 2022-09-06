@@ -176,4 +176,12 @@ h1 {
         margin-bottom: 15rem;
     }
 
+    body {
+        background-color: #FAF8F7;
+    }
+
+    .payment-method p {
+        font-size: 3rem;
+    }
+
 }
